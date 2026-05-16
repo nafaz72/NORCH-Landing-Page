@@ -113,9 +113,9 @@ export function BeforeAfterSlider() {
             <div className="absolute inset-0">
               <ImageWithFallback
                 src={AFTER_IMG}
-                alt="AI-generated model wearing sunglasses"
+                alt="AI-generated model wearing garment"
                 className="w-full h-full object-cover"
-                style={{ objectPosition: "center 25%" }}
+                style={{ objectPosition: "center top" }}
               />
               {/* After label */}
               <div className="absolute top-8 right-5">
@@ -147,9 +147,9 @@ export function BeforeAfterSlider() {
             >
               <ImageWithFallback
                 src={BEFORE_IMG}
-                alt="Original sunglasses product shot"
+                alt="Original garment product shot"
                 className="w-full h-full object-cover"
-                style={{ objectPosition: "center 25%" }}
+                style={{ objectPosition: "center top" }}
               />
               {/* Warm overlay */}
               <div className="absolute inset-0 bg-[#F5F2EE]/10" />
