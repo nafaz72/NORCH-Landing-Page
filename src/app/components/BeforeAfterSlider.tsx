@@ -2,8 +2,8 @@ import { useRef, useState, useCallback, useEffect } from "react";
 import { motion, useInView } from "motion/react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
-const BEFORE_IMG = "https://images.unsplash.com/photo-1774791697891-00796be50f2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxndWNjaSUyMHN1bmdsYXNzZXMlMjB3aGl0ZSUyMGJhY2tncm91bmQlMjBwcm9kdWN0JTIwcGhvdG9ncmFwaHklMjBsdXh1cnl8ZW58MXx8fHwxNzc4ODM4NjkzfDA&ixlib=rb-4.1.0&q=80&w=1080";
-const AFTER_IMG = "https://images.unsplash.com/photo-1582771415755-5d373717fcb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwzfHxtb2RlbCUyMHdlYXJpbmclMjBkZXNpZ25lciUyMHN1bmdsYXNzZXMlMjBlZGl0b3JpYWwlMjBwb3J0cmFpdCUyMGZhc2hpb258ZW58MXx8fHwxNzc4ODM4NjkzfDA&ixlib=rb-4.1.0&q=80&w=1080";
+const BEFORE_IMG = "https://images.unsplash.com/photo-1583394838336-acd977ba7538?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxndWNjaSUyMGRyZXNzJTIwd2hpdGUlMjBiYWNrZ3JvdW5kJTIwcHJvZHVjdCUyMHBob3RvZ3JhcGh5fGVufDB8fHx8MTc3ODgzODY5M3ww&ixlib=rb-4.0.0&q=80&w=1080";
+const AFTER_IMG = "https://images.unsplash.com/photo-1595777707802-414c73d94d3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2RlbCUyMHdlYXJpbmclMjBmYXNoaW9uJTIwZHJlc3MlMjBlZGl0b3JpYWwlMjBwb3J0cmFpdCUyMGx1eHVyeXxlbnwwfHx8fDE3Nzg4Mzg2OTN8MA&ixlib=rb-4.0.0&q=80&w=1080";
 
 export function BeforeAfterSlider() {
   const sectionRef = useRef<HTMLDivElement>(null);
