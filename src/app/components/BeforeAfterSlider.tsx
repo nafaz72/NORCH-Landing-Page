@@ -2,8 +2,8 @@ import { useRef, useState, useCallback, useEffect } from "react";
 import { motion, useInView } from "motion/react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
-const BEFORE_IMG = "https://images.unsplash.com/photo-1583394838336-acd977ba7538?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxndWNjaSUyMGRyZXNzJTIwd2hpdGUlMjBiYWNrZ3JvdW5kJTIwcHJvZHVjdCUyMHBob3RvZ3JhcGh5fGVufDB8fHx8MTc3ODgzODY5M3ww&ixlib=rb-4.0.0&q=80&w=1080";
-const AFTER_IMG = "https://images.unsplash.com/photo-1595777707802-414c73d94d3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2RlbCUyMHdlYXJpbmclMjBmYXNoaW9uJTIwZHJlc3MlMjBlZGl0b3JpYWwlMjBwb3J0cmFpdCUyMGx1eHVyeXxlbnwwfHx8fDE3Nzg4Mzg2OTN8MA&ixlib=rb-4.0.0&q=80&w=1080";
+const BEFORE_IMG = "https://images.unsplash.com/photo-1591746299519-92ce25344a48?w=1080&q=80";
+const AFTER_IMG = "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=1080&q=80";
 
 export function BeforeAfterSlider() {
   const sectionRef = useRef<HTMLDivElement>(null);
