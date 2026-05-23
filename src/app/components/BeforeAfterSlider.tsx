@@ -1,9 +1,11 @@
 import { useRef, useState, useCallback, useEffect } from "react";
 import { motion, useInView } from "motion/react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import N02 from "../../imports/N02.jpg";
+import N01 from "../../imports/N01.jpg";
 
-const BEFORE_IMG = "https://images.unsplash.com/photo-1591746299519-92ce25344a48?w=1080&q=80";
-const AFTER_IMG = "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=1080&q=80";
+const BEFORE_IMG = N02;
+const AFTER_IMG = N01;
 
 export function BeforeAfterSlider() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -113,9 +115,9 @@ export function BeforeAfterSlider() {
             <div className="absolute inset-0">
               <ImageWithFallback
                 src={AFTER_IMG}
-                alt="AI-generated model wearing garment"
+                alt="AI-generated model wearing sunglasses"
                 className="w-full h-full object-cover"
-                style={{ objectPosition: "center top" }}
+                style={{ objectPosition: "center 25%" }}
               />
               {/* After label */}
               <div className="absolute top-8 right-5">
@@ -147,9 +149,9 @@ export function BeforeAfterSlider() {
             >
               <ImageWithFallback
                 src={BEFORE_IMG}
-                alt="Original garment product shot"
+                alt="Original sunglasses product shot"
                 className="w-full h-full object-cover"
-                style={{ objectPosition: "center top" }}
+                style={{ objectPosition: "center 25%" }}
               />
               {/* Warm overlay */}
               <div className="absolute inset-0 bg-[#F5F2EE]/10" />
